@@ -2,7 +2,7 @@ title: 정세아입니다. # name of the site
 author: Sea Jung # name of site's author
 email: jungsea.dev@gmail.com # email of site's author
 url: https://seajungg.github.io # root address of the site
-baseurl: "/home" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
+baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 description: > # description of the site (multiple lines allowed)
   겸손하게 채워가기
 permalink: /:slug.html
