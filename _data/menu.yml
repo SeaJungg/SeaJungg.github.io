@@ -2,37 +2,47 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: info
+  - title: Here is 
     entries:
-      - title: a (nearly) no-CSS, fast, minimalist Jekyll theme.
+      - title: 습관적으로 공부하고 업로드하는 공간.
       - title: github repo
-        url: https://github.com/riggraz/no-style-please
-      - title: "used by <a href='https://riggraz.dev'>riggraz.dev</a> and <a href='https://github.com/riggraz/no-style-please/network/dependents'>many others</a>"
+        url: https://github.com/SeaJungg
+      #- title: "used by <a href='https://riggraz.dev'>riggraz.dev</a> and <a href='https://github.com/riggraz/no-style-please/network/dependents'>many others</a>"
 
-  - title: all posts
+
+  - title: To-Do
     post_list:
-      limit: 5
+      limit: 10
+      category: toDo
       show_more: true
-      show_more_text: See archive...
-      show_more_url: archive.html
+      show_more_text: 더보기
+      show_more_url: toDo-archive.html
 
-  - title: posts by category
+
+  - title: In-Progress
     post_list:
-      category: example2
+      limit: 10
+      category: inProgress
       show_more: true
-      show_more_text: See more posts...
-      show_more_url: example2-archive.html
+      show_more_text: 더보기
+      show_more_url: inProgress-archive.html
 
-  - title: rss
-    url: feed.xml
+
+  - title: Done
+    post_list:
+      limit: 10
+      category: done
+      show_more: true
+      show_more_text: 더보기
+      show_more_url: done-archive.html
+
+#  - title: rss
+#    url: feed.xml
   
-  - title: another list
-    entries:
-      - title: with subitems
-        entries:
-          - title: with subsubitems
-          - title: example page
-            url: about
-  - title: PRO TIP
-    entries:
-      - title: to edit this menu, edit _data/menu.yml file
+#  - title: another list
+#    entries:
+#      - title: with subitems
+#        entries:
+#          - title: with subsubitems
+#          - title: example page
+#            url: about
