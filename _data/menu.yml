@@ -9,6 +9,14 @@ entries:
         url: https://github.com/SeaJungg
       #- title: "used by <a href='https://riggraz.dev'>riggraz.dev</a> and <a href='https://github.com/riggraz/no-style-please/network/dependents'>many others</a>"
 
+#  - title: example
+#    post_list:
+#      limit: 10
+#      category: example
+#      show_more: true
+#      show_more_text: 더보기
+#      show_more_url: toDo-archive.html
+
 
   - title: To-Do
     post_list:
