@@ -20,7 +20,8 @@ category: done
 - super test : Mocha 위에서 돌아가는, API 단위의 테스트. 익스프레스 서버를 구동시켜서 실제 요청 후 결과를 검증한다. 역시 내가 뭔가 필요하다 싶으면 이미 세상에 있다. 무작정 request 보내고 response를 log에서 찾던 나의 시간들 안녕..
 
 ### 적용 내용
-- mocha step 사용했다. `--require mocha-steps` 하나의 API안에서 aync.waterfall로 동작하는 걸 하나하나 테스트하기 위해서.
+- `mocha step` 사용했다. `--require mocha-steps` 하나의 API안에서 aync.waterfall로 동작하는 걸 하나하나 테스트하기 위해서.
+- '응답값에 해당 변수명이 있는지'를 검증하는 데에만 잘 썼다. `result.should.have.property('body').that.includes.all.keys(["access_token"]);` 처럼 리스트 안에 변수를 콤마로 쭉쭉 넣으면 체크해준다.
 ```js
 describe("database with swagger", function () {
 
