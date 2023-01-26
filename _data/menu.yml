@@ -18,6 +18,15 @@ entries:
 #      show_more_url: toDo-archive.html
 
 
+  - title: Done
+    post_list:
+      limit: 10
+      category: done
+      show_more: true
+      show_more_text: 더보기
+      show_more_url: done-archive.html
+
+
   - title: To-Do
     post_list:
       limit: 10
@@ -36,13 +45,6 @@ entries:
       show_more_url: inProgress-archive.html
 
 
-  - title: Done
-    post_list:
-      limit: 10
-      category: done
-      show_more: true
-      show_more_text: 더보기
-      show_more_url: done-archive.html
 
 #  - title: rss
 #    url: feed.xml
