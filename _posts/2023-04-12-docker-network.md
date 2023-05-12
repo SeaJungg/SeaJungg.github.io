@@ -4,7 +4,6 @@ title: "docker container network 설정하면서 만난 에러들"
 category: done
 ---
 
-# docker container network 설정하면서 만난 에러들
 
 ### 현상 파악
 - redis에 붙어야 하는 특정 컨테이너를 띄우는 중

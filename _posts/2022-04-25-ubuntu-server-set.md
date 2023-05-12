@@ -46,3 +46,11 @@ https://rottk.tistory.com/entry/WSL-%EA%B0%80%EC%83%81-%EC%BB%B4%ED%93%A8%ED%84%
 WSL 설정에 의해 나눠 쓰게 되었다 ....(?)
 
 
+### netstat: command not found
+- listen port 하는 것도.. 선조 인프라 엔지니어의 가호가 깃들어 있어서 가능한 커맨드였다.
+- sudo netstat -ltup 을 하려면 아래의 코드로 패키지 설치가 필요하다.
+
+```cmd
+sudo apt install net-tools
+```
+
