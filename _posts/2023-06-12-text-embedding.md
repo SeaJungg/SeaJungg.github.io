@@ -30,13 +30,13 @@ category: inProgress
     - Chat Creation
   - Vector DB
   - Cosine similarity
-  - Prompt Engineering
+  - Prompt Engineering    
 #### 우후죽순 Chat GPT 시장에서 "노하우 있는 애들" 이 되려면 다음의 연구를 해야 한다.
   - LLM 선택
   - LLM에 대한 Fine Tuning(Prompt tuning)
-  - Vector DB에 대한 Semantic Search, Hybrid Search의 최적 파라미터
+  - Vector DB에 대한 Semantic Search, Hybrid Search의 최적 파라미터    
 
-최근 한 달간 다음과 같은 찍먹을 진행했다.
+#### 최근 한 달간 다음과 같은 찍먹을 진행했다.
 ![찍먹.draw.io](..\assets\image\nyam.png)
     
     
