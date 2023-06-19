@@ -24,6 +24,8 @@ category: inProgress
     
 <br><br><br><br>    
 # 전개
+
+#### 회사가 쪼개졌다. 쪼개진 회사로 옮겨왔다.    
 #### 여러 키워드들에 익숙해졌다. 키워드는 다음과 같다.
   - LLM
     - Vector Embedding
