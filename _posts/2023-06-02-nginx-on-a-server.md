@@ -44,7 +44,7 @@ server{
 
 - 저렇게 하고 나서 심볼릭 링크를 만든다.
 ```cmd
-sudo ln -s {AWS에서 준 이름}.amazonaws.com -> /etc/nginx/sites-available/{AWS에서 준 이름}.amazonaws.com
+ln -s /etc/nginx/sites-available/{AWS에서 준 이름}.amazonaws.com /etc/nginx/sites-enabled/{AWS에서 준 이름}.amazonaws.com
 ```
 
     
