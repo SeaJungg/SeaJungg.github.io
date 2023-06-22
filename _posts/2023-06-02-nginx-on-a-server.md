@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AWS EC2 한 대에 nginx 설정해서 여러 서비스(FastAPI, streamlit) 배포하기"
-category: inProgress
+category: done
 ---
 
 ### 현상 파악
@@ -41,5 +41,32 @@ server{
 ```
 - 프론트 서버에는 세 줄이 더 써있는데 WebSocket (ws) 관련 설정도 해준 내용이다.
   - streamlit에서 `ws://{AWS에서 준 이름}.amazonaws.com/_stcore/stream` 에다가도 request를 보내기 때문에.
+
+- 저렇게 하고 나서 심볼릭 링크를 만든다.
+```cmd
+sudo ln -s {AWS에서 준 이름}.amazonaws.com -> /etc/nginx/sites-available/{AWS에서 준 이름}.amazonaws.com
+```
+
+    
+- 이제 재시작하면 바로 접속이 된다.
+```cmd
+sudo service nginx restart
+```
+
+- 혹시나 죽어라고 nginx 기본 페이지로만 간다면 기본값을 과감히 삭제하자.
+```cmd
+sudo rm /etc/nginx/sites-available/default
+sudo rm /etc/nginx/sites-enabled/default
+```
+    
 ### FastAPI 배포
 - gunicorn 배포방법대로 했다.
+```cmd
+python3 -m gunicorn -k uvicorn.workers.UvicornWorker main:app --daemon --access-logfile ./gunicorn-access.log
+```
+
+### streamlit 배포
+- tmux를 이용해 배포했다. 솔직히 이게 맞는지 모르겠는데, 아무튼 급하게 대표님이 찾거나 할 때 휘리릭 배포하기 매우 좋아서 이렇게 했다.
+- tmux 세션을 하나 만들고, `tmux ls`로 세션에 붙고, `tmux attach -t 세션번호` 로 붙은 다음, `streamlit run app.py`를 하면 바로 실행됨.
+- 그 후 컨트롤b를 누르고 d(just d) 를 누르면 살아있다.
+- [참고 아티클](https://medium.com/@data.science.enthusiast/how-to-deploy-a-streamlit-machine-learning-app-over-aws-ec2-instance-12b6751268f1)
