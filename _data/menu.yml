@@ -20,7 +20,7 @@ entries:
 
   - title: Done
     post_list:
-      limit: 10
+      limit: 100
       category: done
       show_more: true
       show_more_text: 더보기
