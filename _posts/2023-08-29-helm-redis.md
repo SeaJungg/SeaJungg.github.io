@@ -18,6 +18,7 @@ category: inProgress
 조치내용
 - 
 - k get pvc 를 해서 뒤져보면 원인을 알 수 있다.
+- pv 공간을 잡으려는데 AWS권한이 없어서 안되는 것
 ```
 [ec2-user@ip-172-31-89-237 ~]$ k get pvc
 NAME                                     STATUS    VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   AGE
