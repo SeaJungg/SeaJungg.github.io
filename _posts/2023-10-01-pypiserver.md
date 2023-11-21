@@ -62,3 +62,14 @@ setup(
     python_requires='>=3.9',
 )
 ```
+    
+
+
+관리방법
+-
+- 업로드한 패키지들은 docker local 에 저장됨
+- docker ps로 컨테이너 ID 를 확인하고 exec실행 
+```
+docker exec -it {container_id} /bin/bash
+```
+- /data/packages 에 들어가면 확인 가능
