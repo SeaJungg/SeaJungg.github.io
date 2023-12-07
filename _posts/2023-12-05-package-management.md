@@ -25,7 +25,8 @@ python 및 poetry버전을 리드미에 명시하기
 
 공유받는 사람이 직접 개발에 참여하는지, 돌리기만 하면 되는지 파악하기
 -
-- 로컬에서 서버가 도는 것까지만을 바란다면 
+- 로컬에서 서버가 도는 것까지만을 바란다면 `poetry export -f requirements.txt --output requirements.txt --without-hashes` 로 requirements.txt 떨궈주고, 그것을 설치하도록 가이드하는 것도 방법이다.
+- 그런데 누군가 수정해야 한다면 poetry를 함께 사용하도록 가이드해야 한다.
 
 pyenv version 으로 원하는 파이썬 버전 맞추기
 -
